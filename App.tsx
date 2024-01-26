@@ -1,7 +1,20 @@
 import React from 'react';
-import {HolaMundoScreen} from './src/screens/HolaMundoScreen';
-import {CounterScreen} from './src/screens/CounterScreen';
+//import {HolaMundoScreen} from './src/screens/HolaMundoScreen';
+//import {CounterScreen} from './src/screens/CounterScreen';
+// import {BoxObjectModelScreen} from './src/screens/BoxObjectModelScreen';
+import {SafeAreaView} from 'react-native';
+// import {DimensionesScreen} from './src/screens/DimensionesScreen';
+// import {PositionScreen} from './src/screens/PositionScreen';
+import {FlexScreen} from './src/screens/FlexScreen';
 
 export const App = () => {
-  return <CounterScreen />;
+  return (
+    <SafeAreaView style={{flex: 1}}>
+      {/* <CounterScreen /> */}
+      {/* <BoxObjectModelScreen /> */}
+      {/* <DimensionesScreen /> */}
+      {/* <PositionScreen /> */}
+      <FlexScreen />
+    </SafeAreaView>
+  );
 };
